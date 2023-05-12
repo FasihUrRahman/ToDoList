@@ -4,11 +4,10 @@
 int optionSelector, i = 0, deleteSelector, a=0, arryLength; 
 string? inputValue = null, isContinue = "true";
 
+//Get Array Length
 Console.Write("How Many Tasks You Have Today: ");
 arryLength = Convert.ToInt32(Console.ReadLine());
 string[] inputsByUser = new string[arryLength];
-
-
 
 //CodeStart
 //Loop For Restart Code
