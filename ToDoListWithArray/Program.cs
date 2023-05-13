@@ -99,10 +99,13 @@ while (isContinue == "true")
                 if (deleteSelector <= inputsByUser.Length)
                 {
                     inputsByUser[deleteSelector - 1] = null;
-                    //Loop For Delete and shuffal Values
+                    //Loop For Delete and Assigning Value to That Deleted Query Values
                     for (int j = deleteSelector - 1; j < a; j++)
                     {
-                        inputsByUser[j] = inputsByUser[j + 1];
+                        if (j + 1 < inputsByUser.Length)
+                            inputsByUser[j] = inputsByUser[j + 1];
+                        else
+                            inputsByUser[j] = null;
                     }
                     i -= 1;
                     Console.WriteLine("Your Query Has Been Deleted");
